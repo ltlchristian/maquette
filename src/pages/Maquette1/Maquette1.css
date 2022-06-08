@@ -1,0 +1,197 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* Barre de navigation */
+.nav {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    height: 64px;
+    box-shadow: 0px 3px 10px rgb(59, 59, 59);
+    z-index: 100;
+}
+
+.nav .logo {
+    height: 50px;
+    margin: 7px 20px;
+}
+
+.nav .links {
+    float: right;
+    margin: 0px 20px;
+    padding-left: 20px;
+    height: 64px;
+}
+
+.nav .links li {
+    display: inline-block;
+    height: 50px;
+    padding: 7px 10px;
+    line-height: 50px;
+}
+
+.nav .links li a {
+    text-decoration: none;
+    color: #151515;
+}
+
+/* Header */
+
+header {
+  min-height: 100vh;
+  /*background-image: url('/images/maquette1/top.jpg');*/
+  background-size: cover;
+  background-position: left;
+}
+
+.header-content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20vh;
+}
+
+.header-content h1,
+.header-content p {
+    text-align: center;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 80px;
+}
+
+.header-content p {
+    font-size: 40px;
+    font-style: italic;
+}
+
+/* Identité */
+
+.identite {
+    display: flex;
+    min-height: 70vh;
+}
+
+.identite .gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    /*flex: 1;*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;    
+}
+
+.identite .gauche .titre {
+    align-self: flex-start;
+}
+
+.identite .gauche .texte {
+    text-align: justify;
+}
+
+.identite .gauche .signature {
+    align-self: flex-end;
+}
+
+.identite .droite {
+    flex: 1;
+    /*background-image: url("/images/maquette1/sophie.jpg");*/
+    background-size: cover;
+    background-position: center;
+}
+
+/* Creation */
+
+.creation {
+    background-color: #151515;
+    padding: 20px 30px;
+}
+
+.creation h2 {
+    text-align: center;
+    color: white;
+}
+
+.creation-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #151515;
+}
+
+.creation-content .image {
+    flex: 1;
+    flex-basis: 300px;
+    margin: 20px;
+}
+
+.creation-content .image img {
+    width: 100%;
+}
+
+/* Tarifs */
+
+.tarif {
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.tarif h2 {
+    text-align: center;
+}
+
+.tarif-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70vw;    
+}
+
+.tarif-content .row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tarif-content .row span {
+    border: 1px solid #151515;
+    flex: 1;
+}
+
+.tarif-content .row:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #151515;
+    padding: 20px 30px;
+}
+
+.contact h2 {
+    color: white;
+    text-align: center;
+}
+
+.contact .form-contact {
+    margin: auto;
+    width: 50vh;
+    color: white;
+}
+
+.contact .form-contact input {
+    display: block;
+}
+
+.contact .form-contact button {
+    display: block;
+}

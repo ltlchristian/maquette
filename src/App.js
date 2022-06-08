@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Maquette1 from './pages/Maquette1';
+import Maquette2 from './pages/Maquette2';
+
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+        <Route path="/" element={<Maquette1/>} />
+        <Route path="/maquette1" element={<Maquette1 />} />
+        <Route path="/maquette2" element={<Maquette2 />} />
+    </Routes>
   );
 }
 
